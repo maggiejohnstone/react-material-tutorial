@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import CreateDialog from '../Exercises/Dialogue/Create';
 
 
 export default props =>
@@ -14,9 +14,9 @@ export default props =>
             <IconButton edge="start" color="inherit" aria-label="menu">
                 <MenuIcon/>
             </IconButton>
-            <Typography variant="h6">
+            <Typography variant="h6" style={{flex: 1}}>
                 Exercise Database
             </Typography>
-            <Button color="inherit">Login</Button>
+            <CreateDialog />
         </Toolbar>
     </AppBar>
